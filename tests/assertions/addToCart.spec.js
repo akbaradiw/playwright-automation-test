@@ -1,5 +1,4 @@
 const { test, expect } = require("@playwright/test");
-// const { default: authActions } = require("../../tests/actions/authActions");
 const { default: addToCartActions } = require("../../tests/actions/addToCartActions");
 
 test.describe("Add to cart", () => {
@@ -11,37 +10,37 @@ test.describe("Add to cart", () => {
   });
 
   test("Add 1 item to cart", async () => {
-    // await objActions.addSauceLabsBackpack();
-    await objActions.viewCart();
+    await objActions.clickSauceLabsBackpack();    
+    await objActions.clickCart();
   });
 
   test("Add 2 items to cart", async () => {
-    await objActions.addSauceLabsBackpack();
-    await objActions.addSauceLabsBoltTShirt();
-    await objActions.viewCart();
+    await objActions.clickSauceLabsBackpack();
+    await objActions.clickLabsBikeLight();
+    await objActions.clickCart();
   });
 
   test("Add 3 items to cart", async () => {
-    await objActions.addSauceLabsBackpack();
-    await objActions.addSauceLabsBoltTShirt();
-    await objActions.addSauceLabsFleeceJacket();
-    await objActions.viewCart();
+    await objActions.clickSauceLabsBackpack();
+    await objActions.clickLabsBikeLight();
+    await objActions.clickLabsBoltTShirt();
+    await objActions.clickCart();
   });
 
   test("Add 4 items to cart", async () => {
-    await objActions.addSauceLabsBackpack();
-    await objActions.addSauceLabsBoltTShirt();
-    await objActions.addSauceLabsFleeceJacket();
-    await objActions.addSauceLabsOnesie();
-    await objActions.viewCart();
+    await objActions.clickSauceLabsBackpack();
+    await objActions.clickLabsBikeLight();
+    await objActions.clickLabsBoltTShirt();    
+    await objActions.clickLabsFleeceJacket();
+    await objActions.clickCart();
   });
 
   test("Add 5 items to cart", async () => {
-    await objActions.addSauceLabsBackpack();
-    await objActions.addSauceLabsBoltTShirt();
-    await objActions.addSauceLabsFleeceJacket();
-    await objActions.addSauceLabsOnesie();
-    await objActions.addSauceLabsTestAllTheThingsTShirt();
-    await objActions.viewCart();
+    await objActions.clickSauceLabsBackpack();
+    await objActions.clickLabsBikeLight();
+    await objActions.clickLabsBoltTShirt();    
+    await objActions.clickLabsFleeceJacket();
+    await objActions. clickLabsOnesie();
+    await objActions.clickCart();
   });
 });
