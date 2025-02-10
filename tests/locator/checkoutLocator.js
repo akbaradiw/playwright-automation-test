@@ -1,7 +1,4 @@
-export default class loginLocator {
-    inputUsername ="#user-name";
-    inputPassword = "#password";
-    buttonLogin = "#login-button";
+export default class checkoutLocator {
     addToCart = '#add-to-cart-sauce-labs-backpack';
     viewCart = '#shopping_cart_container > a'; 
     clickCheckout = '#checkout';

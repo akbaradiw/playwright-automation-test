@@ -1,4 +1,4 @@
-import loginLocator from "../locator/loginLocator";
+import loginLocator from "../locator/authLocator";
 import { expect } from "@playwright/test";
 
 export default class newActions {
